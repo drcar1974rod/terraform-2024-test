@@ -7,7 +7,7 @@ resource "aws_instance" "ubuntu_linux" {
     instance_type = "t2.micro"
     key_name = "redHat"
     tags = {
-        Name = "ubuntu_linux"
+        Name = "ubuntu_linux-server"
     }
 }
 resource "aws_instance" "RHEL" {
@@ -16,6 +16,6 @@ resource "aws_instance" "RHEL" {
     instance_type = "t2.micro"
     key_name = "redHat"
     tags = {
-      Name ="RHEL"
+      Name ="RHEL-server-test"
     }
 }
